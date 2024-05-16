@@ -21,7 +21,9 @@ int main()
 	for(int i=0; i<size; i++) {
 		sum+=array[i];
 	}
-	
+
+	delete[]array;
+	array = NULL;
 	system("cls");
 	
 	cout<<"Sum of all values is: "<<sum;
